@@ -1,12 +1,8 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def index(request):
-    nama = "<h1> jauhari </h1>"
-    kelas = "<h2> TIF </h2>"
-
-    output = nama + kelas
-
-    return HttpResponse(output)
+    return render(request,'index.html')
 
 def about(request):
-    return HttpResponse('hallo2')
+    return render(request,'about.html')
