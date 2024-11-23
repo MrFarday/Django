@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document blog</title>
+    <title>{{judul}}</title>
 </head>
 <body>
-    <h1>selamat datang di blog</h1>
-    <h2>Blog</h2>
+    <h1>selamat datang di {{judul}}</h1>
+    <h2>kontributor {{kontributor}}</h2>
     <ul>
+        <li><a href="/blog/">blog</a></li>
         <li><a href="/about/">about</a></li>
         <li><a href="/" title="">index</a></li>
+        <ul>
+            <li><a href="/blog/cerita/">cerita</a></li>
+            <li><a href="/blog/news/">news</a></li>
+        </ul>
     </ul>
 </body>
 </html>
